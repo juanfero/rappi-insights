@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+rappi.db
+data/
+.streamlit/
+.pytest_cache/
