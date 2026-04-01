@@ -17,13 +17,12 @@ st.set_page_config(
 
 
 def get_db() -> Database:
-    """
-    Obtiene una instancia de Database.
-    La guarda en session_state para reutilizarla durante la sesión.
-    """
-    if "db" not in st.session_state:
-        st.session_state["db"] = Database()
-    return st.session_state["db"]
+    if "db" in st.session_state and st.session_state["db"] is not None:
+        return st.session_state["db"]
+
+    db = Database()
+    st.session_state["db"] = db
+    return db
 
 
 def init_session_state() -> None:
