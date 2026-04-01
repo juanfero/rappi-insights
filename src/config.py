@@ -10,7 +10,7 @@ DEFAULT_METRICS_CSV = "data/RAW_INPUT_METRICS.csv"
 DEFAULT_ORDERS_CSV = "data/RAW_ORDERS.csv"
 
 # ── Modelo y agente ───────────────────────────────────────────
-DEFAULT_MODEL = "claude-haiku-4-5-20251001"
+DEFAULT_MODEL = "gemini-3-flash-preview"
 MAX_AGENT_ITERATIONS = 5
 MAX_CONVERSATION_HISTORY = 20  # pares de mensajes
 
