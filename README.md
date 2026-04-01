@@ -5,6 +5,8 @@ Aplicación Streamlit para analizar métricas operacionales de Rappi desde dos f
 1. un bot conversacional que responde preguntas en lenguaje natural sobre la base de datos;
 2. un sistema de insights automáticos que genera un reporte ejecutivo en Markdown.
 
+
+
 ## Componentes
 1. **Bot Conversacional**
    - Preguntas en lenguaje natural
@@ -20,6 +22,9 @@ Aplicación Streamlit para analizar métricas operacionales de Rappi desde dos f
    - Oportunidades
    - Reporte descargable en Markdown
 
+## Nota importante:
+Configurara su propia Api KEY de Gemini. 
+Ajustarla en .env
 ## Setup Rápido
 
 ```bash
@@ -32,3 +37,4 @@ cp .env.example .env
 # Edita .env y agrega tu GEMINI_API_KEY
 export PYTHONPATH=.
 streamlit run app.py
+
